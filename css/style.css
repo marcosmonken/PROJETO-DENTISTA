@@ -3,25 +3,94 @@
 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 body{
+    width: 100%;
     background-color: rgb(130, 131, 125);
 }
 header{
-    width: 120rem;
+    width: 100%;
     height: 130px;
     background-color: rgb(75, 75, 75);
 }
+header div{
+    background-color: rgb(75, 75, 75);
+    width: 1024px;
+    height: 130px;
+}
 header img {
     width:300px ;
-    position: fixed;
-    padding-left: 200px;
+
+}
+nav{
+    display: flex;
+}
+ul{
+    background-color: rgb(75, 75, 75);
+    height: 130px;
+    width: 600px;
+    display:flex;
+    position: absolute;
+    left: 512.5px;
+    top: 0px;
 }
 li{
-    position: absolute;
-
+    display: inline;
     list-style: none;
-    color: rgb(68, 39, 61);
-  
+    color: rgb(243, 235, 241);
+
+}
+section.carrosel{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow : hidden;
+
+}
+.carrosel-content{
+    width: 300%;
+    height: auto;
+    display: flex;
     
+}
+.carrosel-content input{
+    display: none;
     
-     
+}
+.carrosel-box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.carrosel-box img{
+    width: 100%;
+
+}    
+.nav-manual{
+
+    position: absolute;
+    width:100%;
+    margin-top: 0%;
+    display:flex;
+    justify-content: center;
+    
+}
+.nav-manual .manual-btn{
+    border: 3px solid #161616;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #ff4223;
+}
+.teste{
+    padding-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(163, 93, 93);
 }
